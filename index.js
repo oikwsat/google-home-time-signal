@@ -6,7 +6,7 @@ const moment     = require("moment");
 googlehome.device('Google Home', 'ja');
 
 // Setup time signal
-const cronTime = '0 0 0,7-23 * * *';
+const cronTime = '50 59 6-23 * * *';
 
 let job = new cronJob({
   cronTime: cronTime,
