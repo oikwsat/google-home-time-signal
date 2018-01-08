@@ -14,7 +14,7 @@ let job = new cronJob({
   timeZone: 'Asia/Tokyo',
 
   onTick: function() {
-    let text = moment().hours() + '時です。';
+    let text = (moment().hours() + 1) + '時です。';
     googlehome.notify(text, function(res) {
       console.log(res);
     });
